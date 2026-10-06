@@ -1,5 +1,5 @@
 {
-  "version": "31",
-  "notes": "SECONDO AGGIORNAMENTO FITTIZIO DI PROVA: serve solo a verificare l'avviso. La versione 31 non esiste.",
+  "version": "30",
+  "notes": "Avviso di nuova versione con pulsante Scarica e \"Salta questa versione\", tabelle a pagine, backup automatico, nomi dei dispositivi e Client.",
   "download": "https://github.com/F4310M/mfsoftware-updates/releases"
 }
