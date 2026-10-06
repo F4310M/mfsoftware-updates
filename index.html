@@ -27,7 +27,7 @@
 </main>
 <script>
 // Per aggiungere un'app: una riga qui e una cartella con il suo version.json.
-const APPS = [["IP Track", "ip-track"], ["PasswordVault", "passwordvault"]];
+const APPS = [["IP Track", "ip-track"], ["PasswordVault", "passwordvault"], ["OPTIMUS", "optimus"]];
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 Promise.all(APPS.map(([name, dir]) => fetch(dir + "/version.json", { cache: "no-store" }).then((r) => r.json()).catch(() => null)
   .then((v) => `<div class="app"><h2>${esc(name)}</h2>` + (v

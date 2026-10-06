@@ -6,6 +6,7 @@ Sito (GitHub Pages) da cui le app di MF@Software leggono l'ultima versione dispo
 |---|---|
 | IP Track | `ip-track/version.json` |
 | PasswordVault | `passwordvault/version.json` |
+| OPTIMUS | `optimus/version.json` |
 
 Ogni `version.json` ha tre campi: `version` (numero dell'ultima versione), `notes` (novità, facoltativo)
 e `download` (pagina o file da cui scaricarla, solo `https`).
