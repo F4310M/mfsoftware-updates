@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MF@Software · Aggiornamenti</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 32px 16px; }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  p.sub { margin: 0 0 24px; opacity: .7; }
+  .app { border: 1px solid rgba(128,128,128,.35); border-radius: 12px; padding: 16px 18px; margin-bottom: 14px; }
+  .app h2 { font-size: 18px; margin: 0 0 6px; }
+  .ver { font-weight: 600; }
+  .notes { margin: 6px 0 12px; opacity: .85; }
+  a.btn { display: inline-block; padding: 7px 14px; border-radius: 8px; border: 1px solid currentColor; text-decoration: none; color: inherit; }
+  footer { margin-top: 28px; font-size: 13px; opacity: .7; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <h1>MF@Software · Aggiornamenti</h1>
+  <p class="sub">Ultime versioni delle applicazioni. Le app leggono da qui il numero di versione più recente.</p>
+  <div id="apps"></div>
+  <footer>© Copyright MF@Software</footer>
+</main>
+<script>
+// Per aggiungere un'app: una riga qui e una cartella con il suo version.json.
+const APPS = [["IP Track", "ip-track"], ["PasswordVault", "passwordvault"]];
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+Promise.all(APPS.map(([name, dir]) => fetch(dir + "/version.json", { cache: "no-store" }).then((r) => r.json()).catch(() => null)
+  .then((v) => `<div class="app"><h2>${esc(name)}</h2>` + (v
+    ? `<div>Versione <span class="ver">${esc(v.version)}</span></div>${v.notes ? `<p class="notes">${esc(v.notes)}</p>` : "<p class=\"notes\"></p>"}`
+      + (/^https:\/\//i.test(v.download || "") ? `<a class="btn" href="${esc(v.download)}">Scarica</a>` : "")
+    : "<div>Versione non disponibile.</div>") + "</div>")))
+  .then((html) => document.getElementById("apps").innerHTML = html.join(""));
+</script>
+</body>
+</html>
