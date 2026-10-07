@@ -1,5 +1,5 @@
 {
-  "version": "30",
-  "notes": "Avviso di nuova versione con pulsante Scarica e \"Salta questa versione\", tabelle a pagine, backup automatico, nomi dei dispositivi e Client.",
-  "download": "https://github.com/F4310M/mfsoftware-updates/releases"
+  "version": "32",
+  "notes": "Translations fixed in English, Spanish, French and German; new Verbosity option in Settings → General.",
+  "download": "https://github.com/F4310M/mfsoftware-updates/releases/tag/ip-track-32"
 }
