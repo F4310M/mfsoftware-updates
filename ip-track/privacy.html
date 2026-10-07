@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IP Track · Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 32px 16px; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 28px 0 6px; }
+  p.sub { margin: 0 0 24px; opacity: .7; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  a { color: inherit; }
+  footer { margin-top: 32px; font-size: 13px; opacity: .7; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <h1>IP Track · Privacy Policy</h1>
+  <p class="sub">Last updated: 7 October 2026 · Publisher: MF@Software</p>
+
+  <p>IP Track is a network monitor that you install and run on your own computer or home server. It shows which programs and devices are talking to the Internet and warns you when one of them contacts a site known to be dangerous. This page explains what the app reads, where that information stays and what leaves your device.</p>
+
+  <h2>In short</h2>
+  <ul>
+    <li>IP Track does not collect, transmit or share any personal data with MF@Software or with anyone else.</li>
+    <li>Everything the app records stays on the device where it is installed.</li>
+    <li>The app contains no advertising, no analytics and no third-party tracking tools.</li>
+    <li>No account with MF@Software is needed to use it.</li>
+  </ul>
+
+  <h2>What the app reads on your device</h2>
+  <p>To do its job, IP Track reads the following information on the device where it runs:</p>
+  <ul>
+    <li>the active network connections: program name, local and remote IP address, port, protocol and duration;</li>
+    <li>the names of the sites contacted, taken from the DNS activity of the device;</li>
+    <li>the devices seen on your local network: IP address, MAC address and host name;</li>
+    <li>if you choose to connect your router, the DNS log of the router, which lists the sites requested by the devices of your home network;</li>
+    <li>the names you assign to devices and the user accounts you create inside the app. Passwords are stored only as salted hashes.</li>
+  </ul>
+  <p>IP Track sees the names of sites, not the pages you open, what you type or the content of your communications.</p>
+
+  <h2>Where the data is stored</h2>
+  <p>All of this is saved in a local database in the app's data folder on your device. It is never uploaded to MF@Software or to any cloud service. You decide how long the history is kept (from one week to always) in Settings, and you can delete it at any time by shortening the retention period or by removing the app and its data folder. Optional backups are written only to the folder you choose.</p>
+
+  <h2>Connections the app makes to the outside</h2>
+  <p>IP Track connects to the Internet only for the following reasons:</p>
+  <ul>
+    <li><b>Lists of dangerous sites.</b> The app downloads public lists from abuse.ch (URLhaus and Feodo Tracker) and Spamhaus. These are plain downloads: nothing about you or your network is sent, apart from what any download reveals, such as your public IP address.</li>
+    <li><b>Update check.</b> If enabled, the app reads a small file from <code>f4310m.github.io</code> (GitHub Pages) to learn the latest version number. The request carries only the installed version of IP Track.</li>
+    <li><b>Notifications, only if you turn them on.</b> If you configure Telegram or ntfy, alert messages are sent to that service using the credentials you entered. An alert contains the name of the program or device and the dangerous site it contacted. These services have their own privacy policies.</li>
+    <li><b>Your router, only if you connect it.</b> The app talks to your own router on your local network using the address and key you entered.</li>
+  </ul>
+  <p>The comparison between the sites you contact and the lists of dangerous sites happens on your device: the sites you visit are not sent anywhere to be checked.</p>
+
+  <h2>Licence activation</h2>
+  <p>IP Track is free. To unlock it after the trial period you can send by email a Machine ID shown by the app and receive a serial number. The Machine ID is a random code created when the app is installed and does not contain personal data. This step is done by you, by email; the app does not send it automatically. Your email address is used only to reply to you.</p>
+
+  <h2>People on your network</h2>
+  <p>If you install IP Track on a shared computer or connect it to your home router, it can show the sites requested by other people's devices. You are responsible for informing the people who use that computer or network and for using the app in accordance with the laws that apply to you.</p>
+
+  <h2>Children</h2>
+  <p>IP Track is a tool for the person who administers a computer or a home network. It does not collect data from children or from anyone else.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the new version will be published on this page with a new date.</p>
+
+  <h2>Contact</h2>
+  <p>For any question about privacy write to <a href="mailto:fabio.mutone@gmx.com">fabio.mutone@gmx.com</a>.</p>
+
+  <footer>© Copyright MF@Software</footer>
+</main>
+</body>
+</html>
