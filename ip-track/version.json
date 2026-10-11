@@ -1,5 +1,7 @@
 {
-  "version": "34",
-  "notes": "Backup restore, Client management window, licence reminders, customisable Connections table, guide search, user menu.",
-  "download": "https://github.com/F4310M/mfsoftware-updates/releases/tag/ip-track-34"
+  "version": "35",
+  "notes": "One-click update from the app (Windows setup, Linux, macOS).",
+  "download": "https://github.com/F4310M/mfsoftware-updates/releases/tag/ip-track-35",
+  "app_url": "https://github.com/F4310M/mfsoftware-updates/releases/download/ip-track-35/ip-track-app-35.zip",
+  "app_sha256": "bac865dc929469e8aac05579f8e80142150655c903effedbb7da0e3884c19be0"
 }
