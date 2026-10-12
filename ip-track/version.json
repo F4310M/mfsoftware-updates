@@ -1,7 +1,7 @@
 {
-  "version": "35",
-  "notes": "One-click update from the app (Windows setup, Linux, macOS).",
-  "download": "https://github.com/F4310M/mfsoftware-updates/releases/tag/ip-track-35",
-  "app_url": "https://github.com/F4310M/mfsoftware-updates/releases/download/ip-track-35/ip-track-app-35.zip",
-  "app_sha256": "78b8e3389980f42091f88852dd014ffbe2e1fd6da944918df6c106987f180d9b"
+  "version": "36.1",
+  "notes": "Tidier Simple mode, settings that save themselves, IP and MAC of the device in a tooltip on the title, and on Windows a notice when monitoring is basic with a guide on running as administrator.",
+  "download": "https://github.com/F4310M/mfsoftware-updates/releases/tag/ip-track-36.1",
+  "app_url": "https://github.com/F4310M/mfsoftware-updates/releases/download/ip-track-36.1/ip-track-app-36.1.zip",
+  "app_sha256": "fee526caac9ff34fa7501490fbef51addcfec95c5318467c737b976002808d60"
 }
