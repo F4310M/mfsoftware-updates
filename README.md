@@ -1,6 +1,6 @@
-# MF@Software · Aggiornamenti
+# MFSOFT · Aggiornamenti
 
-Sito (GitHub Pages) da cui le app di MF@Software leggono l'ultima versione disponibile.
+Sito (GitHub Pages) da cui le app di MFSOFT leggono l'ultima versione disponibile.
 
 | App | File letto dall'app |
 |---|---|
